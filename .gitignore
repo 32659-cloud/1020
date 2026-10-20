@@ -218,3 +218,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Food agent: secrets and personal data (never commit) ---
+.env
+.env.*
+!.env.example
+
+# DATA_DIR contents (photos and Excel log). DATA_DIR should live outside the
+# repo; these entries are a safety net in case it is placed inside.
+data/
+photos/
+*.xlsx
+*.xlsx.tmp
